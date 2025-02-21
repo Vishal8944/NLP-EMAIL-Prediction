@@ -10,7 +10,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import accuracy_score, classification_report
 import streamlit as st
 
-df=pd.read_csv(r"C:\Users\Vishal S\OneDrive\Desktop\email.csv",encoding="utf-8")
+df = pd.read_csv("email.csv", encoding="utf-8")
 nltk.download('stopwords')
 
 df['Label'] = df['Label'].map({'Spam': 1, 'Non-Spam': 0})
